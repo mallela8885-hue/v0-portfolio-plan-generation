@@ -496,39 +496,69 @@ export function HeroSection() {
             </div>
           </motion.div>
 
-          {/* CTA Buttons - Better Alignment */}
+          {/* Primary CTA Buttons - Bigger and More Visible */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-            className="flex flex-wrap items-center justify-center gap-3 md:gap-4"
+            transition={{ delay: 0.7 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
-            <Button size="lg" className="gap-2 glow-primary text-base px-8 font-semibold">
-              <Download className="h-5 w-5" />
-              Download CV
-            </Button>
-            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent hover:bg-card/50" asChild>
-              <a href="https://github.com/kranthikiran885366" target="_blank" rel="noopener noreferrer">
-                <Github className="h-5 w-5" />
-                <span className="hidden sm:inline">GitHub</span>
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent hover:bg-card/50" asChild>
-              <a
-                href="https://www.linkedin.com/in/kranthi-kiran-mallela-2464ab2b0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin className="h-5 w-5" />
-                <span className="hidden sm:inline">LinkedIn</span>
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent hover:bg-card/50" asChild>
+            <Button
+              size="lg"
+              className="gap-2 glow-primary text-lg px-10 py-7 font-bold rounded-lg w-full sm:w-auto"
+              asChild
+            >
               <Link href="/contact">
-                <Mail className="h-5 w-5" />
-                <span className="hidden sm:inline">Contact</span>
+                <Mail className="h-6 w-6" />
+                Hire Me
               </Link>
             </Button>
+            <Button
+              size="lg"
+              className="gap-2 text-lg px-10 py-7 font-bold rounded-lg w-full sm:w-auto bg-primary/20 hover:bg-primary/30 border-2 border-primary/60"
+              variant="outline"
+            >
+              <Download className="h-6 w-6" />
+              Download Resume
+            </Button>
+            <Button
+              size="lg"
+              className="gap-2 text-lg px-10 py-7 font-bold rounded-lg w-full sm:w-auto bg-primary/20 hover:bg-primary/30 border-2 border-primary/60"
+              variant="outline"
+              asChild
+            >
+              <Link href="/projects">
+                <Code2 className="h-6 w-6" />
+                View Projects
+              </Link>
+            </Button>
+          </motion.div>
+
+          {/* Secondary Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+            className="flex items-center justify-center gap-6 text-muted-foreground"
+          >
+            <a
+              href="https://github.com/kranthikiran885366"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors duration-300"
+              title="GitHub Profile"
+            >
+              <Github className="h-6 w-6" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kranthi-kiran-mallela-2464ab2b0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors duration-300"
+              title="LinkedIn Profile"
+            >
+              <Linkedin className="h-6 w-6" />
+            </a>
           </motion.div>
         </motion.div>
       </div>
