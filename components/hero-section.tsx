@@ -15,6 +15,7 @@ import {
   Icosahedron,
   Octahedron,
 } from "@react-three/drei"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -25,12 +26,7 @@ import {
   Mail,
   Code2,
   Brain,
-  Layers,
-  Server,
-  Smartphone,
-  Trophy,
   Bot,
-  Cloud,
 } from "lucide-react"
 import Link from "next/link"
 import { FloatingTechIcon } from "./tech-icons"
