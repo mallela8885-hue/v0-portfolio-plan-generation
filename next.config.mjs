@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
- 
+  output: "standalone"   // ✅ ADD THIS LINE
 }
 
 export default nextConfig
