@@ -341,12 +341,13 @@ export function HeroSection() {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 z-5 bg-gradient-to-b from-background/40 via-transparent to-background pointer-events-none" />
 
-      <div className="absolute inset-0 z-10 pointer-events-none hidden xl:block">
-        {floatingTechNames.map((name, index) => (
+      {/* Floating Tech Icons - Desktop Only, Performance Optimized */}
+      <div className="absolute inset-0 z-10 pointer-events-none hidden 2xl:block">
+        {floatingTechNames.slice(0, 8).map((name, index) => (
           <FloatingTechIcon
             key={name}
             name={name}
-            delay={index * 0.3}
+            delay={index * 0.5}
             x={iconPositions[index].x}
             y={iconPositions[index].y}
           />
