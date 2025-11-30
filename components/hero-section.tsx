@@ -363,158 +363,197 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+      <div className="relative z-20 container px-4 py-12 sm:py-16 md:py-20 flex items-center justify-center min-h-screen">
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="w-full max-w-5xl">
+          {/* Profile Image Section */}
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.1, type: "spring", stiffness: 100 }}
-            className="mb-8"
+            className="flex justify-center mb-12"
           >
-            <div className="relative inline-block">
+            <div className="relative w-fit">
+              {/* Animated background glow */}
               <motion.div
-                className="absolute -inset-2 bg-gradient-to-r from-primary via-accent to-primary rounded-full blur-xl"
+                className="absolute -inset-3 md:-inset-4 bg-gradient-to-r from-primary via-purple-500 to-cyan-500 rounded-full blur-2xl opacity-40"
                 animate={{
-                  opacity: [0.5, 0.8, 0.5],
-                  scale: [1, 1.1, 1],
+                  opacity: [0.3, 0.6, 0.3],
+                  scale: [1, 1.15, 1],
                 }}
-                transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
+                transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
               />
+
+              {/* Rotating border ring */}
               <motion.div
-                className="absolute -inset-4 bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-500 rounded-full opacity-30"
+                className="absolute -inset-5 md:-inset-6 rounded-full border-2 border-transparent bg-gradient-to-r from-primary via-purple-500 to-cyan-500 bg-clip-border opacity-20"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+                transition={{ duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
               />
-              <img
-                src="/kranthi-kiran-profile.jpeg"
-                alt="Kranthi Kiran"
-                className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-primary/50 shadow-2xl z-10"
-              />
-              <motion.div
-                className="absolute -bottom-2 -right-2 bg-primary rounded-full p-2.5 z-20"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-              >
-                <Code2 className="h-5 w-5 text-primary-foreground" />
-              </motion.div>
-              <motion.div
-                className="absolute -top-2 -left-2 bg-purple-500 rounded-full p-2 z-20"
-                animate={{ scale: [1, 1.15, 1] }}
-                transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY, delay: 0.5 }}
-              >
-                <Brain className="h-4 w-4 text-white" />
-              </motion.div>
+
+              {/* Image container */}
+              <div className="relative rounded-full overflow-hidden w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 border-4 border-primary/60 shadow-2xl bg-card">
+                <img
+                  src="/kranthi-kiran-profile.jpeg"
+                  alt="Kranthi Kiran"
+                  className="w-full h-full object-cover"
+                />
+
+                {/* Corner badges */}
+                <motion.div
+                  className="absolute bottom-4 right-4 bg-primary rounded-full p-3 shadow-lg"
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
+                >
+                  <Code2 className="h-6 w-6 text-primary-foreground" />
+                </motion.div>
+
+                <motion.div
+                  className="absolute top-4 left-4 bg-purple-500 rounded-full p-2.5 shadow-lg"
+                  animate={{ scale: [1, 1.15, 1] }}
+                  transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY, delay: 0.5 }}
+                >
+                  <Brain className="h-5 w-5 text-white" />
+                </motion.div>
+              </div>
             </div>
           </motion.div>
 
+          {/* Welcome Badge */}
           <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
-            className="mb-6"
+            className="text-center mb-8"
           >
-            <span className="inline-block px-5 py-2.5 rounded-full bg-primary/10 text-primary text-sm font-semibold border border-primary/20 backdrop-blur-sm">
+            <span className="inline-block px-6 py-3 rounded-full bg-primary/15 text-primary text-sm font-semibold border border-primary/30 backdrop-blur-sm hover:bg-primary/20 transition-colors">
               Welcome to my Digital Universe
             </span>
           </motion.div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-balance leading-tight">
-            <span className="text-foreground">Hi, I'm </span>
-            <span className="text-primary text-glow">Kranthi Kiran</span>
-          </h1>
+          {/* Main Heading */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.25 }}
+            className="text-center mb-6 space-y-2"
+          >
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-balance leading-tight tracking-tight">
+              <span className="text-foreground">Hi, I'm </span>
+              <span className="text-primary text-glow">Kranthi Kiran</span>
+            </h1>
+          </motion.div>
 
-          <div className="text-xl sm:text-2xl md:text-3xl font-medium mb-6 h-12 flex items-center justify-center">
-            <TypingAnimation />
-          </div>
+          {/* Typing Animation - Role */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35 }}
+            className="text-center mb-8"
+          >
+            <div className="inline-block text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide h-16 flex items-center justify-center">
+              <TypingAnimation />
+            </div>
+          </motion.div>
 
+          {/* Expertise Badges - Better Grid */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex flex-wrap justify-center gap-3 mb-8"
+            className="flex justify-center mb-10"
           >
-            {expertiseBadges.map((item, i) => (
-              <motion.div
-                key={item.label}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5 + i * 0.08 }}
-                whileHover={{ scale: 1.05, y: -3 }}
-              >
-                <Badge
-                  variant="secondary"
-                  className="px-4 py-2 text-sm gap-2 bg-card/50 backdrop-blur-sm border border-border cursor-pointer"
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+              {expertiseBadges.map((item, i) => (
+                <motion.div
+                  key={item.label}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.5 + i * 0.06 }}
+                  whileHover={{ scale: 1.08, y: -4 }}
                 >
-                  <item.icon className="h-4 w-4" style={{ color: item.color }} />
-                  {item.label}
-                </Badge>
-              </motion.div>
-            ))}
+                  <Badge
+                    variant="secondary"
+                    className="px-3 md:px-4 py-2 text-xs md:text-sm gap-2 bg-card/60 hover:bg-card/80 backdrop-blur-sm border border-border/60 cursor-pointer transition-all"
+                  >
+                    <item.icon className="h-4 w-4 flex-shrink-0" style={{ color: item.color }} />
+                    <span className="hidden sm:inline">{item.label}</span>
+                    <span className="sm:hidden">{item.label.split("/")[0]}</span>
+                  </Badge>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
+          {/* Description */}
           <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="text-muted-foreground text-lg md:text-xl max-w-4xl mx-auto mb-8 text-pretty leading-relaxed"
+            className="text-center text-muted-foreground text-base md:text-lg max-w-3xl mx-auto mb-10 text-pretty leading-relaxed"
           >
             Transforming ideas into powerful digital experiences with{" "}
             <span className="text-primary font-semibold">5+ years</span> of expertise. I specialize in building scalable
             web applications, intelligent AI systems & agents, cross-platform mobile apps, Chrome extensions, and robust
-            DevOps infrastructures. Passionate about solving complex problems with elegant, performant solutions.
+            DevOps infrastructures.
           </motion.p>
 
+          {/* Quick Stats - Better Layout */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10"
+            className="mb-10"
           >
-            {quickStats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.7 + i * 0.1 }}
-                whileHover={{ scale: 1.05 }}
-                className="bg-card/30 backdrop-blur-sm border border-border rounded-xl p-4 text-center"
-              >
-                <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>
-                <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-3xl mx-auto">
+              {quickStats.map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.7 + i * 0.08 }}
+                  whileHover={{ scale: 1.08, y: -3 }}
+                  className="group"
+                >
+                  <div className="bg-card/40 hover:bg-card/60 backdrop-blur-sm border border-border/60 hover:border-border rounded-xl p-4 text-center transition-all duration-300">
+                    <div className="text-2xl md:text-3xl font-bold text-primary group-hover:text-primary/80 transition-colors">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">{stat.label}</div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
+          {/* CTA Buttons - Better Alignment */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            className="flex flex-wrap items-center justify-center gap-4"
+            className="flex flex-wrap items-center justify-center gap-3 md:gap-4"
           >
-            <Button size="lg" className="gap-2 glow-primary text-base px-8">
+            <Button size="lg" className="gap-2 glow-primary text-base px-8 font-semibold">
               <Download className="h-5 w-5" />
               Download CV
             </Button>
-            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent" asChild>
+            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent hover:bg-card/50" asChild>
               <a href="https://github.com/kranthikiran885366" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
-                GitHub
+                <span className="hidden sm:inline">GitHub</span>
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent" asChild>
+            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent hover:bg-card/50" asChild>
               <a
                 href="https://www.linkedin.com/in/kranthi-kiran-mallela-2464ab2b0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Linkedin className="h-5 w-5" />
-                LinkedIn
+                <span className="hidden sm:inline">LinkedIn</span>
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent" asChild>
+            <Button size="lg" variant="outline" className="gap-2 text-base px-6 bg-transparent hover:bg-card/50" asChild>
               <Link href="/contact">
                 <Mail className="h-5 w-5" />
-                Contact
+                <span className="hidden sm:inline">Contact</span>
               </Link>
             </Button>
           </motion.div>
