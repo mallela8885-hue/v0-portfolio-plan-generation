@@ -387,7 +387,7 @@ export function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Welcome Badge */}
+          {/* Professional Tagline Badge */}
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -395,7 +395,7 @@ export function HeroSection() {
             className="text-center mb-8"
           >
             <span className="inline-block px-6 py-3 rounded-full bg-primary/15 text-primary text-sm font-semibold border border-primary/30 backdrop-blur-sm hover:bg-primary/20 transition-colors">
-              Welcome to my Digital Universe
+              Building Smart AI Agents & Scalable Systems
             </span>
           </motion.div>
 
