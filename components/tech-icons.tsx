@@ -68,7 +68,6 @@ import {
   SiElectron,
   SiJest,
   SiCypress,
-  SiPlaywright,
   SiSelenium,
   SiPostman,
   SiSwagger,
