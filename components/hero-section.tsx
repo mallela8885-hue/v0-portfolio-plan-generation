@@ -317,12 +317,7 @@ export function HeroSection() {
   const expertiseBadges = [
     { icon: Code2, label: "150+ Projects", color: "#22d3ee" },
     { icon: Brain, label: "AI/ML Expert", color: "#8b5cf6" },
-    { icon: Server, label: "Full-Stack Master", color: "#10b981" },
-    { icon: Layers, label: "8+ Domains", color: "#f59e0b" },
-    { icon: Smartphone, label: "App Developer", color: "#06b6d4" },
-    { icon: Cloud, label: "DevOps Pro", color: "#3b82f6" },
-    { icon: Bot, label: "Agent Builder", color: "#ec4899" },
-    { icon: Trophy, label: "Top Coder", color: "#ffa116" },
+    { icon: Bot, label: "Agent Developer", color: "#ec4899" },
   ]
 
   const quickStats = [
