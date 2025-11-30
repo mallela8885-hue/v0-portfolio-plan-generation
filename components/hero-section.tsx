@@ -429,69 +429,29 @@ export function HeroSection() {
             </p>
           </motion.div>
 
-          {/* Expertise Badges - Better Grid */}
+          {/* Expertise Badges - Minimal, Performance Optimized */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex justify-center mb-10"
+            className="flex justify-center mb-12"
           >
-            <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+            <div className="flex flex-wrap justify-center gap-3">
               {expertiseBadges.map((item, i) => (
                 <motion.div
                   key={item.label}
-                  initial={{ opacity: 0, scale: 0.8 }}
+                  initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.5 + i * 0.06 }}
-                  whileHover={{ scale: 1.08, y: -4 }}
+                  transition={{ delay: 0.45 + i * 0.05 }}
+                  whileHover={{ scale: 1.05 }}
                 >
                   <Badge
                     variant="secondary"
-                    className="px-3 md:px-4 py-2 text-xs md:text-sm gap-2 bg-card/60 hover:bg-card/80 backdrop-blur-sm border border-border/60 cursor-pointer transition-all"
+                    className="px-4 py-2 text-sm gap-2 bg-card/70 hover:bg-card/90 backdrop-blur-sm border border-border/70 cursor-pointer transition-all"
                   >
                     <item.icon className="h-4 w-4 flex-shrink-0" style={{ color: item.color }} />
-                    <span className="hidden sm:inline">{item.label}</span>
-                    <span className="sm:hidden">{item.label.split("/")[0]}</span>
+                    {item.label}
                   </Badge>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="text-center text-muted-foreground text-base md:text-lg max-w-3xl mx-auto mb-10 text-pretty leading-relaxed"
-          >
-            Transforming ideas into powerful digital experiences with{" "}
-            <span className="text-primary font-semibold">5+ years</span> of expertise. I specialize in building scalable
-            web applications, intelligent AI systems & agents, cross-platform mobile apps, Chrome extensions, and robust
-            DevOps infrastructures.
-          </motion.p>
-
-          {/* Quick Stats - Better Layout */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="mb-10"
-          >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-3xl mx-auto">
-              {quickStats.map((stat, i) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.7 + i * 0.08 }}
-                  whileHover={{ scale: 1.08, y: -3 }}
-                  className="group"
-                >
-                  <div className="bg-card/40 hover:bg-card/60 backdrop-blur-sm border border-border/60 hover:border-border rounded-xl p-4 text-center transition-all duration-300">
-                    <div className="text-2xl md:text-3xl font-bold text-primary group-hover:text-primary/80 transition-colors">{stat.value}</div>
-                    <div className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">{stat.label}</div>
-                  </div>
                 </motion.div>
               ))}
             </div>
