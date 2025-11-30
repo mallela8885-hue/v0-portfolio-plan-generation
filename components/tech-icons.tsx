@@ -202,7 +202,7 @@ export const techIcons: Record<string, { icon: React.ComponentType<{ className?:
   "Adobe XD": { icon: SiAdobexd, color: "#FF61F6" },
   Arduino: { icon: SiArduino, color: "#00979D" },
   "Raspberry Pi": { icon: SiRaspberrypi, color: "#A22846" },
-  "VS Code": { icon: SiVisualstudiocode, color: "#007ACC" },
+  "VS Code": { icon: Code2, color: "#007ACC" },
 
   // Competitive Programming
   "Data Structures": { icon: Layers, color: "#22D3EE" },
