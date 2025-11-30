@@ -87,7 +87,6 @@ import {
   SiApachemaven,
   SiJunit5,
   SiSqlite,
-  SiVisualstudiocode,
 } from "react-icons/si"
 import { FaJava, FaMicrosoft, FaBell, FaInfinity, FaProjectDiagram, FaSitemap } from "react-icons/fa"
 import { Code2, Cpu, Database, Globe, Layers, Terminal, Brain, Cloud, Bot, Shield, Workflow } from "lucide-react"
