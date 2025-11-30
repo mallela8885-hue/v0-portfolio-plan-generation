@@ -373,47 +373,25 @@ export function HeroSection() {
             className="flex justify-center mb-12"
           >
             <div className="relative w-fit">
-              {/* Animated background glow */}
+              {/* Soft shadow backdrop */}
               <motion.div
-                className="absolute -inset-3 md:-inset-4 bg-gradient-to-r from-primary via-purple-500 to-cyan-500 rounded-full blur-2xl opacity-40"
+                className="absolute -inset-8 md:-inset-10 bg-gradient-to-r from-cyan-500/20 to-cyan-500/10 rounded-full blur-3xl opacity-50"
                 animate={{
-                  opacity: [0.3, 0.6, 0.3],
-                  scale: [1, 1.15, 1],
+                  opacity: [0.4, 0.6, 0.4],
                 }}
                 transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
               />
 
-              {/* Rotating border ring */}
-              <motion.div
-                className="absolute -inset-5 md:-inset-6 rounded-full border-2 border-transparent bg-gradient-to-r from-primary via-purple-500 to-cyan-500 bg-clip-border opacity-20"
-                animate={{ rotate: 360 }}
-                transition={{ duration: 12, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-              />
+              {/* Thin neon teal ring */}
+              <div className="absolute -inset-2 rounded-full border border-cyan-400/60 shadow-lg shadow-cyan-400/20" />
 
               {/* Image container */}
-              <div className="relative rounded-full overflow-hidden w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 shadow-2xl bg-card">
+              <div className="relative rounded-full overflow-hidden w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 shadow-lg shadow-black/40 bg-card">
                 <img
                   src="/kranthi-kiran-profile.jpeg"
                   alt="Kranthi Kiran"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover brightness-110 contrast-125"
                 />
-
-                {/* Corner badges */}
-                <motion.div
-                  className="absolute bottom-4 right-4 bg-primary rounded-full p-3 shadow-lg"
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-                >
-                  <Code2 className="h-6 w-6 text-primary-foreground" />
-                </motion.div>
-
-                <motion.div
-                  className="absolute top-4 left-4 bg-purple-500 rounded-full p-2.5 shadow-lg"
-                  animate={{ scale: [1, 1.15, 1] }}
-                  transition={{ duration: 2.5, repeat: Number.POSITIVE_INFINITY, delay: 0.5 }}
-                >
-                  <Brain className="h-5 w-5 text-white" />
-                </motion.div>
               </div>
             </div>
           </motion.div>
