@@ -391,7 +391,7 @@ export function HeroSection() {
               />
 
               {/* Image container */}
-              <div className="relative rounded-full overflow-hidden w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 border-4 border-primary/60 shadow-2xl bg-card">
+              <div className="relative rounded-full overflow-hidden w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 border-4 border-primary shadow-2xl bg-card ring-2 ring-primary/30">
                 <img
                   src="/kranthi-kiran-profile.jpeg"
                   alt="Kranthi Kiran"
