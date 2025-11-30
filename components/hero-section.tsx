@@ -404,7 +404,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.25 }}
-            className="text-center mb-6 space-y-2"
+            className="text-center mb-4"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-balance leading-tight tracking-tight">
               <span className="text-foreground">Hi, I'm </span>
@@ -412,16 +412,16 @@ export function HeroSection() {
             </h1>
           </motion.div>
 
-          {/* Typing Animation - Role */}
+          {/* Professional Subtitle */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.35 }}
+            transition={{ delay: 0.3 }}
             className="text-center mb-8"
           >
-            <div className="inline-block text-2xl sm:text-3xl md:text-4xl font-semibold tracking-wide h-16 flex items-center justify-center">
-              <TypingAnimation />
-            </div>
+            <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-muted-foreground tracking-wide">
+              AI Agent Engineer <span className="text-primary">|</span> Full-Stack Developer <span className="text-primary">|</span> DevOps Specialist
+            </p>
           </motion.div>
 
           {/* Expertise Badges - Better Grid */}
