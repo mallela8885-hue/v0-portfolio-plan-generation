@@ -2,8 +2,6 @@
 
 import type React from "react"
 
-// Fixed invalid icon imports
-
 import { motion } from "framer-motion"
 import {
   SiReact,
