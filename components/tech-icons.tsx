@@ -68,7 +68,6 @@ import {
   SiElectron,
   SiJest,
   SiCypress,
-  SiPlaywright,
   SiSelenium,
   SiPostman,
   SiSwagger,
@@ -87,7 +86,6 @@ import {
   SiApachemaven,
   SiJunit5,
   SiSqlite,
-  SiVisualstudiocode,
 } from "react-icons/si"
 import { FaJava, FaMicrosoft, FaBell, FaInfinity, FaProjectDiagram, FaSitemap } from "react-icons/fa"
 import { Code2, Cpu, Database, Globe, Layers, Terminal, Brain, Cloud, Bot, Shield, Workflow } from "lucide-react"
@@ -195,7 +193,7 @@ export const techIcons: Record<string, { icon: React.ComponentType<{ className?:
   Twilio: { icon: SiTwilio, color: "#F22F46" },
   Jest: { icon: SiJest, color: "#C21325" },
   Cypress: { icon: SiCypress, color: "#17202C" },
-  Playwright: { icon: SiPlaywright, color: "#2EAD33" },
+  Playwright: { icon: Code2, color: "#2EAD33" },
   Selenium: { icon: SiSelenium, color: "#43B02A" },
   Postman: { icon: SiPostman, color: "#FF6C37" },
   Swagger: { icon: SiSwagger, color: "#85EA2D" },
@@ -203,7 +201,7 @@ export const techIcons: Record<string, { icon: React.ComponentType<{ className?:
   "Adobe XD": { icon: SiAdobexd, color: "#FF61F6" },
   Arduino: { icon: SiArduino, color: "#00979D" },
   "Raspberry Pi": { icon: SiRaspberrypi, color: "#A22846" },
-  "VS Code": { icon: SiVisualstudiocode, color: "#007ACC" },
+  "VS Code": { icon: Code2, color: "#007ACC" },
 
   // Competitive Programming
   "Data Structures": { icon: Layers, color: "#22D3EE" },
