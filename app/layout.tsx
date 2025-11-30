@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Kranthi Kiran | Full-Stack Developer & AI Engineer",
+  title: "Kranthi Portfolio",
   description:
     "Kranthi Kiran - Full-Stack Developer, AI/ML Engineer, Chrome Extension & Agent Developer, App Creator, DevOps Engineer, and Competitive Programmer with 150+ projects across multiple domains.",
   generator: "v0.app",
