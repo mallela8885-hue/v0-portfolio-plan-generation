@@ -365,13 +365,13 @@ export function HeroSection() {
             className="flex justify-center mb-12"
           >
             <div className="relative w-fit">
-              {/* Soft shadow backdrop */}
+              {/* Soft shadow backdrop - Reduced motion for performance */}
               <motion.div
                 className="absolute -inset-8 md:-inset-10 bg-gradient-to-r from-cyan-500/20 to-cyan-500/10 rounded-full blur-3xl opacity-50"
                 animate={{
-                  opacity: [0.4, 0.6, 0.4],
+                  opacity: [0.45, 0.55, 0.45],
                 }}
-                transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
+                transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               />
 
               {/* Thin neon teal ring */}
