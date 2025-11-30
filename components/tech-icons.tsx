@@ -193,7 +193,7 @@ export const techIcons: Record<string, { icon: React.ComponentType<{ className?:
   Twilio: { icon: SiTwilio, color: "#F22F46" },
   Jest: { icon: SiJest, color: "#C21325" },
   Cypress: { icon: SiCypress, color: "#17202C" },
-  Playwright: { icon: SiPlaywright, color: "#2EAD33" },
+  Playwright: { icon: Terminal, color: "#2EAD33" },
   Selenium: { icon: SiSelenium, color: "#43B02A" },
   Postman: { icon: SiPostman, color: "#FF6C37" },
   Swagger: { icon: SiSwagger, color: "#85EA2D" },
