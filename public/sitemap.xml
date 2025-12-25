@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOME PAGE -->
+  <url>
+    <loc>https://kranthi-portfilo.vercel.app/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://kranthi-portfilo.vercel.app/images/mallela-kranthi-kiran.jpg</image:loc>
+      <image:title>Mallela Kranthi Kiran</image:title>
+      <image:caption>Professional portrait of Mallela Kranthi Kiran</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://kranthi-portfilo.vercel.app/images/mallela-kranthi-kiran-2.jpg</image:loc>
+      <image:title>Mallela Kranthi Kiran Developer</image:title>
+      <image:caption>Full Stack Engineer and AI Developer</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://kranthi-portfilo.vercel.app/images/mallela-kranthi-kiran-3.jpg</image:loc>
+      <image:title>Mallela Kranthi Kiran Portfolio</image:title>
+      <image:caption>Software Engineer portfolio image</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://kranthi-portfilo.vercel.app/images/mallela-kranthi-kiran-4.jpg</image:loc>
+      <image:title>Mallela Kranthi Kiran Professional</image:title>
+      <image:caption>Technology professional from India</image:caption>
+    </image:image>
+
+  </url>
+
+  <!-- EXPERIENCE PAGE -->
+  <url>
+    <loc>https://kranthi-portfilo.vercel.app/experience</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PROJECTS PAGE -->
+  <url>
+    <loc>https://kranthi-portfilo.vercel.app/projects</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SKILLS PAGE -->
+  <url>
+    <loc>https://kranthi-portfilo.vercel.app/skills</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- EDUCATION PAGE -->
+  <url>
+    <loc>https://kranthi-portfilo.vercel.app/education</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+
+    <image:image>
+      <image:loc>https://kranthi-portfilo.vercel.app/images/education.jpg</image:loc>
+      <image:title>Mallela Kranthi Kiran Education</image:title>
+      <image:caption>Education background of Mallela Kranthi Kiran</image:caption>
+    </image:image>
+
+  </url>
+
+  <!-- CONTACT PAGE -->
+  <url>
+    <loc>https://kranthi-portfilo.vercel.app/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+
+    <image:image>
+      <image:loc>https://kranthi-portfilo.vercel.app/images/contact.jpg</image:loc>
+      <image:title>Contact Mallela Kranthi Kiran</image:title>
+      <image:caption>Get in touch with Mallela Kranthi Kiran</image:caption>
+    </image:image>
+
+  </url>
+
+</urlset>

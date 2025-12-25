@@ -10,6 +10,7 @@ const nextConfig = {
     qualities: [75, 85],
   },
   compress: true,
+  output: "standalone",
 }
 
 export default nextConfig

@@ -12,8 +12,8 @@ import type * as THREE from "three"
 
 const education = {
   degree: "Bachelor of Technology in Computer Science",
-  university: "Top Engineering University",
-  period: "2018 - 2022",
+  university: "Vignan Foundation Science and Technologies",
+  period: "2023 - 2027",
   gpa: "3.9/4.0",
   specialization: "Artificial Intelligence & Machine Learning",
   thesis: "Deep Learning Approaches for Natural Language Understanding",
